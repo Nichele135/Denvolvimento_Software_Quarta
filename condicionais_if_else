@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class condicionais {
+  
+    public static void main(String[] args) {
+        System.out.print("Digite sua idade: ");
+
+        Scanner scanner = new Scanner(System.in);
+        int valor = scanner.nextInt();
+        
+        if (valor < 18){
+            System.out.println("Voce nao pode dirigir!");
+        } 
+        else if(valor >= 18 && valor <=60){
+            System.out.println("Voce pode dirigir!");
+        } 
+        else{
+            System.out.println("Voce nao deveria dirigir!");
+        }
+
+        scanner.close();
+
+    }
+    
+}
+
+

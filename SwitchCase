@@ -1,0 +1,21 @@
+public class switchCase {
+  
+    public static void main(String[] args) {
+        System.out.print("Informe seu destino: ");
+
+        Scanner scanner = new Scanner(System.in);
+        String valor = scanner.nextLine();
+        
+        switch (valor){
+			case "Brasil":
+			System.out.println("Bem vindo ao Brasil");
+			break;
+			case "USA":
+			System.out.println("Bem vindo ao Brasil");
+			default:
+			System.out.println("Bem vindo ao " + valor);
+			break;
+		}
+        scanner.close();
+	}
+    }

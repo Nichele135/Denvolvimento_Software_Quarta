@@ -1,0 +1,14 @@
+public class Variaveis {
+  
+    public static void main(String[] args) {
+        double valor = 0;
+        float valorFloat = 1.1f;
+        int valorInt = 1;
+        boolean valorBoolean = true;
+        char letra = 'a';
+        long valorLong = 12323;
+
+
+    }
+    
+}

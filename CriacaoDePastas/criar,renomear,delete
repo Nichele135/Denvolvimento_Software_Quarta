@@ -1,0 +1,47 @@
+package br6.edu.up.arquivos;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
+public class Principal {
+    public static void main(String[] args) throws IOException {
+
+        // esse File abaixo serve para criar diretorio.
+
+        File diretorio = new File("C:\\AndreJava\\br6\\edu\\up\\Teste");
+        if (!diretorio.exists()) {
+            diretorio.mkdir();
+        }
+
+        // Esse file abaixo serve para criar um arquivo, o arquivo usado nessa criaçao
+        // foi o (test.txt).
+
+        File arquivo = new File(diretorio, "test.txt");
+        File arquivo2 = new File(diretorio, "banco.txt");
+        if (arquivo.exists()) {
+            arquivo.createNewFile();
+        }
+
+        File files = new File("C:\\AndreJava\\br6\\edu\\up");
+        for (File file : files.listFiles()) {
+            System.out.println("Diretorio: " + file.isDirectory());
+            System.out.println("Arquivo: " + file.isFile());
+        }
+
+        // boolean result = diretorio.mkdir();
+        boolean result = arquivo.createNewFile();
+
+        // esse if serve para ve se a criaçao do diretorio e do arquivo deu certo.
+
+        /*
+         * if (result) {
+         * System.out.println("Sucesso");
+         * }else {
+         * System.out.println("falha");
+         * }
+         * System.out.println(diretorio.getAbsoluteFile());
+         */
+
+    }
+}

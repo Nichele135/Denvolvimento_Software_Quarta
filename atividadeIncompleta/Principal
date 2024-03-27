@@ -1,0 +1,15 @@
+package Aula2703.br.com.exrcicios;
+
+import Aula2703.br.com.exrcicios.exer2.Animal;
+
+public class Principal {
+    public static void main(String[] args) {
+        Animal animal =new Animal();
+
+        animal.infos();
+
+        animal.acao();
+        
+    }
+    
+}

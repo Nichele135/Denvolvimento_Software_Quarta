@@ -1,0 +1,101 @@
+package Aula2703.br.com.exrcicios.exer2;
+
+import java.util.Scanner;
+
+public class Animal {
+    Scanner scanner = new Scanner(System.in);
+
+public String nome;
+public int idade;
+public double caloria;
+boolean estado;
+
+public Animal(){
+    this.nome = nome;
+    this.idade = idade;
+    this.caloria = caloria;
+
+}
+
+public void infos(){ 
+
+    System.out.println("Digite o nome do animal: ");
+    nome = scanner.nextLine();
+     
+    System.out.println("Digite a idade do "+ nome +": ");
+    idade = scanner.nextInt();
+    
+    System.out.println("Digite quantas caloria o(a) "+ nome +" tem: ");
+    caloria = scanner.nextDouble();
+
+
+}
+
+public void acao(){
+
+   
+
+    do {
+
+    System.out.println("Qual vai ser a acao do " + nome + "Ele(a) pode |1-DORMIR| |2-CORRER| |3-COMER| |4-MORRER|");
+    String op = scanner.nextLine();
+    
+    estado = true;
+
+    switch (op) {
+
+        case "1":
+            caloria -= 50;
+            System.out.println("Ele esta DORMINDO e agora esta com: "+ caloria +" calorias");
+            estado = true;
+
+            if (caloria == 0) {
+                System.out.println("Infelizmente ele morreu de fome");
+                estado = false;
+            }
+
+            break;
+        
+        case "2":
+            caloria -= 200;
+            System.out.println("Ele esta correndo e agora esta com: "+ caloria +" calorias");
+            estado = true;
+
+            if (caloria == 0) {
+                System.out.println("Infelizmente ele morreu de fome");
+                estado = false;
+            }
+            
+            break;
+        case "3":
+            caloria += 1000;
+            System.out.println("Ele esta COMENDO e agora esta com: "+ caloria +" calorias");
+            estado = true;
+            
+            if (caloria == 0) {
+                System.out.println("Infelizmente ele morreu de fome");
+                estado = false;
+            }
+            
+            break;
+
+        case "4":
+            estado = false;
+            caloria = 0;
+            System.out.println("Infelizmente o "+ nome +" morreu");
+            
+            break;
+
+        default:
+            estado = false;
+            System.out.println("Tente novamente");
+            break;
+    }
+
+
+} while (estado == false || caloria < 0);
+    
+}
+
+
+}

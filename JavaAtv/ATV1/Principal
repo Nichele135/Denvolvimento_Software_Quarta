@@ -1,0 +1,16 @@
+package com;
+
+import com.up.Animal;
+
+public class Principal {
+    public static void main(String[] args) {
+        
+        Animal bicho = new Animal();
+
+        bicho.infos();
+
+        bicho.acao();;
+
+    }
+    
+}

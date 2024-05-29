@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Aulas Passadas.iml" filepath="$PROJECT_DIR$/.idea/Aulas Passadas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections/Collections.iml" filepath="$PROJECT_DIR$/Collections/Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Heranca/Heranca.iml" filepath="$PROJECT_DIR$/Heranca/Heranca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Heranca2/Heranca2.iml" filepath="$PROJECT_DIR$/Heranca2/Heranca2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Heranca/Heranca2/Heranca21.iml" filepath="$PROJECT_DIR$/Heranca/Heranca2/Heranca21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/realacionamento/realacionamento.iml" filepath="$PROJECT_DIR$/realacionamento/realacionamento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/relacionamento/relacionamento.iml" filepath="$PROJECT_DIR$/relacionamento/relacionamento.iml" />
+    </modules>
+  </component>
+</project>
